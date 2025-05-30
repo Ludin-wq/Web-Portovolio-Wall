@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sawal Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.jpeg" type="image/x-icon">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="top-bar">
+    <div class="logo">Garetrx</div>
+    <input type="text" class="search" placeholder="Search..." />
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+    <nav id="navbar">
+      <ul class="nav-list" id="navList">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#works">Works</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <h1>I am Sawal<br><span>Web Developer + Graphic Designer</span></h1>
+      <p>Saya membantu menciptakan solusi visual dan fungsional yang modern</p>
+    </div>
+    <div class="hero-image">
+      <img src="profil.jpeg" alt="Sawal" />
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <h2>My Quality Services</h2>
+    <div class="services">
+      <div class="card">Branding Design</div>
+      <div class="card">Graphic Design</div>
+      <div class="card">Web Design</div>
+      <div class="card">App Design</div>
+    </div>
+  </section>
+
+  <!-- RECENT WORKS -->
+  <section id="works">
+    <h2>My Recent Works</h2>
+    <div class="works">
+      <div class="work-card">Project 1</div>
+      <div class="work-card">Project 2</div>
+      <div class="work-card">Project 3</div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE & EDUCATION -->
+  <section id="experience">
+    <h2>My Experience</h2>
+    <div class="experience">
+      <div class="item">Lead Developer - 2024</div>
+      <div class="item">Graphic Desain - 2024</div>
+    </div>
+
+    <h2>My Education</h2>
+    <div class="education">
+      <div class="item">SMAN 2 KONSEL - 2023</div>
+      <div class="item">Design & Tech - 2020</div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>Alight Motion</span>
+    </div>
+  </section>
+
+  <!-- TESTIMONI -->
+  <section id="testimoni">
+    <h2>My Client's Stories</h2>
+    <div class="testimoni">
+      <div class="quote">"Desainnya keren!" - Gita Ayu Lestari Rakim</div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Let’s Work Together</h2>
+    <form onsubmit="showMessage(); return false;">
+      <input type="text" placeholder="Nama" required />
+      <input type="email" placeholder="Email" required />
+      <textarea placeholder="Pesan..." required></textarea>
+      <button type="submit">Kirim Pesan</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Sawal. All rights reserved.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
